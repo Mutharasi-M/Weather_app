@@ -79,7 +79,7 @@
                         $(".wind-speed").empty().append(data.wind.speed + 'km/hr');
                         $(".city").empty().append(data.name);
 
-                        var weatherIcon = data.weather[0] +'.png';
+                        var weatherIcon = data.weather[0].main +'.png';
                         $('.weather_icon').attr('src','images/'+ weatherIcon);
                         $('.weather_icon').attr('alt', weatherIcon);
                     }                    
